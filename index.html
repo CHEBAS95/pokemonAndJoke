@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <title>api Fecth</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul class="nav_button_list">
+          <li ><button id="getUser">Lista de Usuarios</button></li>
+          <li><button id="getPokemon">Obten un Pokemon</button></li>
+          <li><button id="getJoke"><a href="#joke">Chiste del Dia</a></button></li>
+        </ul>
+      </nav>
+    </header>
+    
+    <main >
+      <div  id="users_tables" class="container_main">
+        <h2>listas de ususario</h2>
+        <div id="users" class="getInfo"></div>
+      </div>
+      <div id="pokemon_table" class="container_main pokemon_table">
+        <h2>lista de pokemones</h2>
+        <div id="pokemon" class="getInfo"></div>
+      </div>
+      <div id="phrase_table" class="container_main">
+        <h2>tu chiste del dia es :</h2>
+        <div id="joke" class="getInfo">
+        </div>
+      </div>
+    </main>
+    <script type="module" src="./scripts/main.js"></script>
+    <!-- <script src="./scripts/usuariosPlaceholder.js"></script> -->
+  </body>
+</html>
