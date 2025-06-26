@@ -11,7 +11,7 @@ export function fetchUsers() {
       return response.json();
     })
     .then((data) => {
-      console.log(data);
+      console.log("users resolv: ",data);
       getNameApi(data);
     })
     .catch((error) => {
@@ -71,18 +71,21 @@ function getNameApi(data) {
 }
 
 function getPokemon(data) {
+  console.log("procesando data", data);
+  
   let pokeBox = document.getElementById("pokemon");
   data.forEach((item) => {
     let button = document.createElement("button");
     button.classList.add("btn");
     button.textContent = item.name;
+    button.addEventListener("click", ()=>getDataPoke(data, item.name))
     pokeBox.appendChild(button);
   });
 }
 
 function getJoke(joke) {
   let showJokeBox = document.getElementById("joke");
-
+  showJokeBox.innerHTML = ""; // Limpiar el contenido previo
   if (Object.hasOwn(joke, "joke")) {
     createElement(joke.joke, "h4");
   } else if (Object.hasOwn(joke, "setup")) {
@@ -100,4 +103,11 @@ function getJoke(joke) {
     showJokeBox.appendChild(textJoke);
     textJoke.textContent = paramsBody;
   }
+}
+
+export function getDataPoke (data, pokemonName){
+  const showPokeInfo = document.getElementById("mainPokeInfo");
+  showPokeInfo.style.display= "inline-block"
+  alert(`click en ${pokemonName}`);
+  alert(data.url)
 }

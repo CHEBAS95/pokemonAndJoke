@@ -10,7 +10,7 @@
     <header>
       <nav>
         <ul class="nav_button_list">
-          <li ><button id="getUser">Lista de Usuarios</button></li>
+          <!-- <li ><button id="getUser">Lista de Usuarios</button></li> -->
           <li><button id="getPokemon">Obten un Pokemon</button></li>
           <li><button id="getJoke"><a href="#joke">Chiste del Dia</a></button></li>
         </ul>
@@ -18,9 +18,41 @@
     </header>
     
     <main >
-      <div  id="users_tables" class="container_main">
+      <!-- <div  id="users_tables" class="container_main">
         <h2>listas de ususario</h2>
         <div id="users" class="getInfo"></div>
+      </div> -->
+      <div class="dropDown cardPokemon container_main" id="mainPokeInfo">
+        <div id="pokeId" class ="cardPoke getInfo">
+          <div id="pokeName">nombre</div>
+          <section>#12</section>
+        </div>
+        <div id="pokeImg" class="pokeImg cardPoke">
+          <div id="containerImg">
+            <img src="" alt="pokemon ">
+          </div>
+        </div>
+        <div id="stats" class="getInfo">
+          <div class="stats">h4</div>
+          <div class="stats">h4</div>
+        </div>
+        <div id="type" class="getInfo">
+          <div class="habilitesBox">
+            <button>fire</button>
+          </div>
+          <div class="habilitesBox">
+            <button>water</button>
+          </div>
+          <div class="habilitesBox">
+            <button>air</button>
+          </div>
+          <div class="habilitesBox">
+            <button>sand</button>
+          </div>
+          <div class="habilitesBox">
+            <button>Phisco</button>
+          </div>
+        </div>
       </div>
       <div id="pokemon_table" class="container_main pokemon_table">
         <h2>lista de pokemones</h2>

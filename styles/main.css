@@ -37,7 +37,7 @@ header {
 }
 
 main {
-  background-color: rgb(54, 51, 56);
+  background-color:#244242;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -45,23 +45,43 @@ main {
   height: 100vh;
 }
 .container_main{
-  background-color: aqua;
+  background-color: #a3e3b1;
   /* flex-grow: 1;
   min-height: 15; */
 }
 
 .getInfo{
-  background-color: yellow;
+  background-color: #5199F0;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   padding: 10px;
   flex-grow: 1;
+  margin: 5px;
   
 }
 
 .btn:hover{
   cursor: pointer;
+}
+
+.cardPokemon{
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  justify-content: space-around;
+}
+.pokeImg{
+  background-color:#ff2121;
+  width: 300px;
+  height: 300px;
+  position: relative;
+  margin:auto;
+  margin-top: 5px
+}
+.dropDown{
+  display: none;
+  position: relative;
 }
